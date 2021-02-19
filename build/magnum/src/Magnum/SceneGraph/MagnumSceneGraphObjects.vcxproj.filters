@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Animable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractFeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractFeature.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractGroupedFeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTranslation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTranslationRotation2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTranslationRotation3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTranslationRotationScaling2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AbstractTranslationRotationScaling3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Animable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Animable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\AnimableGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Drawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Drawable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\DualComplexTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\DualQuaternionTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\RigidMatrixTransformation2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\RigidMatrixTransformation2D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\RigidMatrixTransformation3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\RigidMatrixTransformation3D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\FeatureGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\FeatureGroup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\MatrixTransformation2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\MatrixTransformation2D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\MatrixTransformation3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\MatrixTransformation3D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\SceneGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\TranslationTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\TranslationRotationScalingTransformation2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\TranslationRotationScalingTransformation3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\visibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\SceneGraph\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{58300196-472B-33F5-9F7E-FDAE13A22D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

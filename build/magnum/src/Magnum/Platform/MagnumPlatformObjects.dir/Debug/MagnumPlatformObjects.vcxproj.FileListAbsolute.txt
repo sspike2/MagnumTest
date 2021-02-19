@@ -1,0 +1,2 @@
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Platform\MagnumPlatformObjects.dir\Debug\MagnumPlatformObjects.lib
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Platform\MagnumPlatformObjects.dir\Debug\MagnumPlatformObjects.pdb

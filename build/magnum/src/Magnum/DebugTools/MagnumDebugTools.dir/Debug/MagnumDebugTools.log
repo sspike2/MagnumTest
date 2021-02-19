@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/DebugTools/CMakeLists.txt
+  FrameProfiler.cpp
+  CompareImage.cpp
+  Generating Code...
+  MagnumDebugTools.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumDebugTools-d.lib

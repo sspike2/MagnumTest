@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\DefaultFramebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Framebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\OpenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Renderbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TextureFormat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\BufferState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ContextState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\FramebufferState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\MeshState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\QueryState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\RendererState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ShaderProgramState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ShaderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\TextureState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\driverSpecific.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\maxTextureSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\RectangleTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\PrimitiveQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TextureArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TransformFeedback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\TransformFeedbackState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\DebugOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\DebugState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\BufferTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CubeMapTextureArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\MultisampleTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractFramebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractShaderProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CubeMapTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\DefaultFramebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Extensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Framebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\GL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\MeshView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\OpenGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\PixelFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Renderbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\RenderbufferFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TextureFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TimeQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\visibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\PipelineStatisticsQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\RectangleTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\BufferImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\PrimitiveQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TextureArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\TransformFeedback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\DebugOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\BufferTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\BufferTextureFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CubeMapTextureArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\ImageFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\MultisampleTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\SampleQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\BufferState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ContextState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\FramebufferState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\maxTextureSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\MeshState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\QueryState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\RendererState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ShaderProgramState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\ShaderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\TextureState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Implementation\DebugState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{58300196-472B-33F5-9F7E-FDAE13A22D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/corrade/src/Corrade/Interconnect/CMakeLists.txt
+  Connection.cpp
+  Emitter.cpp
+  Receiver.cpp
+  Generating Code...
+  CorradeInterconnect.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\CorradeInterconnect-d.lib

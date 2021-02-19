@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\DebugTools\FrameProfiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\DebugTools\CompareImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\DebugTools\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\ColorMap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\Profiler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\ResourceManager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\Screenshot.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\TextureImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\BufferData.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\ForceRenderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\$(Configuration)\ObjectRenderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{6DD48A92-9569-30D8-A8A8-5C211B463560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Trade/CMakeLists.txt
+  ArrayAllocator.cpp
+  Data.cpp
+  MeshObjectData2D.cpp
+  MeshObjectData3D.cpp
+  SceneData.cpp
+  TextureData.cpp
+  Generating Code...
+  MagnumTradeObjects.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Trade\MagnumTradeObjects.dir\Debug\MagnumTradeObjects.lib

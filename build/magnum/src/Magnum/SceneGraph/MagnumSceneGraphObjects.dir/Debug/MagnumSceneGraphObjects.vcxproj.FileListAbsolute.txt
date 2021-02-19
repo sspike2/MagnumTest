@@ -1,0 +1,2 @@
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\SceneGraph\MagnumSceneGraphObjects.dir\Debug\MagnumSceneGraphObjects.lib
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\SceneGraph\MagnumSceneGraphObjects.dir\Debug\MagnumSceneGraphObjects.pdb

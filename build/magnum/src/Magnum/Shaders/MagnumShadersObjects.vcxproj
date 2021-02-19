@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF2F48D8-32A3-33CD-8029-3C27EA5CAF21}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>MagnumShadersObjects</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MagnumShadersObjects.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MagnumShadersObjects.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MagnumShadersObjects</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MagnumShadersObjects.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MagnumShadersObjects.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MagnumShadersObjects</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MagnumShadersObjects.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MagnumShadersObjects.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MagnumShadersObjects</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MagnumShadersObjects.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MagnumShadersObjects.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MagnumShadersObjects</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4244;4267;4351;4373;4510;4610;4512;4661;4702;4706;4800;4910</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;CORRADE_IS_DEBUG_BUILD;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;CORRADE_IS_DEBUG_BUILD;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4251;4244;4267;4351;4373;4510;4610;4512;4661;4702;4706;4800;4910</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4251;4244;4267;4351;4373;4510;4610;4512;4661;4702;4706;4800;4910</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4244;4267;4351;4373;4510;4610;4512;4661;4702;4706;4800;4910</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Magnum 2.0\magnum-bootstrap-base\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src;D:\Magnum 2.0\magnum-bootstrap-base\corrade\src;D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\build\CMakeFiles\f2c95327e307ec29ada9b54f7ed744cd\resource_MagnumShaders_RCS.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\corrade-rc.exe" MagnumShaders_RCS resources.conf "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\corrade-rc.exe;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.depends;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\FullScreenTriangle.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\generic.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.geom;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Vector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\DistanceFieldVector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\compatibility.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Magnum 2.0\magnum-bootstrap-base\build\Release\bin\corrade-rc.exe" MagnumShaders_RCS resources.conf "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\Release\bin\corrade-rc.exe;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.depends;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\FullScreenTriangle.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\generic.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.geom;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Vector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\DistanceFieldVector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\compatibility.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Magnum 2.0\magnum-bootstrap-base\build\MinSizeRel\bin\corrade-rc.exe" MagnumShaders_RCS resources.conf "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\MinSizeRel\bin\corrade-rc.exe;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.depends;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\FullScreenTriangle.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\generic.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.geom;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Vector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\DistanceFieldVector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\compatibility.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Magnum 2.0\magnum-bootstrap-base\build\RelWithDebInfo\bin\corrade-rc.exe" MagnumShaders_RCS resources.conf "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/resource_MagnumShaders_RCS.cpp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\RelWithDebInfo\bin\corrade-rc.exe;D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.depends;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\FullScreenTriangle.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\generic.glsl;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.geom;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Vector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\DistanceFieldVector.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.vert;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.frag;D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\compatibility.glsl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Shaders/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Magnum 2.0/magnum-bootstrap-base" "-BD:/Magnum 2.0/magnum-bootstrap-base/build" --check-stamp-file "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\resources.conf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Shaders/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Magnum 2.0/magnum-bootstrap-base" "-BD:/Magnum 2.0/magnum-bootstrap-base/build" --check-stamp-file "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\resources.conf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Shaders/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Magnum 2.0/magnum-bootstrap-base" "-BD:/Magnum 2.0/magnum-bootstrap-base/build" --check-stamp-file "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\resources.conf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Shaders/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Magnum 2.0/magnum-bootstrap-base" "-BD:/Magnum 2.0/magnum-bootstrap-base/build" --check-stamp-file "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/Shaders/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\resources.conf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.cpp" />
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.cpp" />
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\resource_MagnumShaders_RCS.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORRADE_AUTOMATIC_INITIALIZER=CORRADE_NOOP;CORRADE_AUTOMATIC_FINALIZER=CORRADE_NOOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORRADE_AUTOMATIC_INITIALIZER=CORRADE_NOOP;CORRADE_AUTOMATIC_FINALIZER=CORRADE_NOOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CORRADE_AUTOMATIC_INITIALIZER=CORRADE_NOOP;CORRADE_AUTOMATIC_FINALIZER=CORRADE_NOOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CORRADE_AUTOMATIC_INITIALIZER=CORRADE_NOOP;CORRADE_AUTOMATIC_FINALIZER=CORRADE_NOOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\DistanceFieldVector.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\AbstractVector.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Flat.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Generic.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\MeshVisualizer.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Phong.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Shaders.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\Vector.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\VertexColor.h" />
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Shaders\visibility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Magnum 2.0\magnum-bootstrap-base\build\ZERO_CHECK.vcxproj">
+      <Project>{6BBCE7EA-473B-3C4A-81A5-63264612DF4D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Shaders\MagnumShaders_RCS-dependencies.vcxproj">
+      <Project>{15870EE6-8EA9-39DE-B66F-453E1B3C4DE8}</Project>
+      <Name>MagnumShaders_RCS-dependencies</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Magnum 2.0\magnum-bootstrap-base\build\corrade\src\Corrade\Utility\corrade-rc.vcxproj">
+      <Project>{5EB46F47-B376-3ADE-8D99-1BA30484062D}</Project>
+      <Name>corrade-rc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

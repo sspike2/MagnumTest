@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\Atlas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\DistanceField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\TextureTools\resource_MagnumTextureTools_RCS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\Atlas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\visibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\DistanceField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\build\CMakeFiles\d71949864db88c4c974a0c36dc81c5a9\resource_MagnumTextureTools_RCS.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\TextureTools\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{616A31C1-CACE-358C-97BA-56F6D90DC16B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{58300196-472B-33F5-9F7E-FDAE13A22D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

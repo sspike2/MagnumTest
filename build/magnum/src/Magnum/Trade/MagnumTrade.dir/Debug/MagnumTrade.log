@@ -1,0 +1,128 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Trade/CMakeLists.txt
+  AbstractImageConverter.cpp
+  AbstractImporter.cpp
+  AbstractSceneConverter.cpp
+  AnimationData.cpp
+  CameraData.cpp
+  FlatMaterialData.cpp
+  ImageData.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum/PixelFormat.h(2253,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(82): message : see reference to function template instantiation 'Magnum::CompressedPixelFormat Magnum::compressedPixelFormatWrap<Magnum::UnsignedInt>(T)' being compiled
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(82): message : while compiling class template member function 'Magnum::Trade::ImageData<1>::ImageData(Magnum::CompressedPixelStorage,Magnum::UnsignedInt,const Magnum::Math::Vector<1,T> &,Corrade::Containers::Array<char,void (__cdecl *)(char *,size_t)> &&,const void *) noexcept'
+          with
+          [
+              T=Magnum::Int
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(84): message : see reference to function template instantiation 'Magnum::Trade::ImageData<1>::ImageData(Magnum::CompressedPixelStorage,Magnum::UnsignedInt,const Magnum::Math::Vector<1,T> &,Corrade::Containers::Array<char,void (__cdecl *)(char *,size_t)> &&,const void *) noexcept' being compiled
+          with
+          [
+              T=Magnum::Int
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(218): message : see reference to class template instantiation 'Magnum::Trade::ImageData<1>' being compiled
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum/PixelFormat.h(703,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(58): message : see reference to function template instantiation 'Magnum::PixelFormat Magnum::pixelFormatWrap<Magnum::UnsignedInt>(T)' being compiled
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\ImageData.cpp(58): message : while compiling class template member function 'Magnum::Trade::ImageData<1>::ImageData(Magnum::PixelStorage,Magnum::UnsignedInt,Magnum::UnsignedInt,Magnum::UnsignedInt,const Magnum::Math::Vector<1,T> &,Magnum::Trade::DataFlags,Corrade::Containers::ArrayView<const void>,const void *) noexcept'
+          with
+          [
+              T=Magnum::Int
+          ]
+  LightData.cpp
+  MaterialData.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(230,29): warning C4456: declaration of 'i' hides previous local declaration
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(220,21): message : see declaration of 'i'
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(267,29): warning C4456: declaration of 'i' hides previous local declaration
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(262,21): message : see declaration of 'i'
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(843,92): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MaterialData.cpp(852,92): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+  MeshData.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(443,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(493,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(592,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(621,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(648,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(664,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(680,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(719,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(772,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+  ObjectData2D.cpp
+  ObjectData3D.cpp
+  PbrClearCoatMaterialData.cpp
+  PbrMetallicRoughnessMaterialData.cpp
+  PbrSpecularGlossinessMaterialData.cpp
+  PhongMaterialData.cpp
+  SkinData.cpp
+  MeshData2D.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(87,46): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(92,52): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(97,44): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(102,50): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(107,50): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(112,56): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(117,40): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData2D.cpp(122,46): warning C4996: 'Magnum::Trade::MeshData2D': use MeshData instead
+  MeshData3D.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(93,46): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(98,52): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(103,44): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(108,50): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(113,42): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(118,48): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(123,50): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(128,56): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(133,40): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData3D.cpp(138,46): warning C4996: 'Magnum::Trade::MeshData3D': use MeshData instead
+  Generating Code...
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Trade\MeshData.cpp(132): warning C4701: potentially uninitialized local variable 'expectedAttributeVertexCount' used
+  MagnumTrade.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumTrade-d.lib

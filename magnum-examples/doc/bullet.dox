@@ -1,0 +1,78 @@
+/*
+    This file is part of Magnum.
+
+    Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019,
+                2020, 2021 Vladimír Vondruš <mosra@centrum.cz>
+    Copyright © 2013 Jan Dupal <dupal.j@gmail.com>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+*/
+
+namespace Magnum {
+/** @page examples-bullet Bullet Physics
+@brief Integration of [Bullet Physics](http://www.bulletphysics.com) into Magnum.
+
+@m_footernavigation
+
+@image html bullet.png
+
+A rotating table full of cubes that you can shoot down, showcasing the
+@ref BulletIntegration library together with @ref SceneGraph using
+@ref BulletIntegration::MotionState, visualizing various properties of the
+Bullet physics world using @ref BulletIntegration::DebugDraw. Everything is
+rendered in at most three draw calls using instanced @ref Shaders::Phong.
+
+@m_div{m-button m-primary} <a href="https://magnum.graphics/showcase/bullet/">@m_div{m-big} Live web demo @m_enddiv @m_div{m-small} uses WebAssembly & WebGL @m_enddiv </a> @m_enddiv
+
+@section examples-bullet-controls Key controls
+
+-   @m_class{m-label m-default} **Arrow keys** rotate the camera around
+-   @m_class{m-label m-default} **mouse click** shoots an object
+-   @m_class{m-label m-default} **S** toggles between a box (larger, lighter)
+    or a sphere (smaller but heavier) to shoot
+-   @m_class{m-label m-default} **D** toggles draw mode (solid + wireframe debug
+    overlay, just solid or just wireframe debug)
+
+@section examples-bullet-credits Credits
+
+This example was originally contributed by [Jan Dupal](https://github.com/JanDupal)
+and further improved by [Max Schwarz](https://github.com/xqms). The example
+makes use of the Bullet Physics library, see documentation of the
+@ref BulletIntegration namespace for license information.
+
+@section examples-bullet-source Source
+
+Full source code is linked below and also available in the
+[magnum-examples GitHub repository](https://github.com/mosra/magnum-examples/tree/master/src/bullet).
+This example depends on the @ref BulletIntegration library which is not a part
+of the core Magnum repository, see its documentation for usage instructions.
+
+-   @ref bullet/BulletExample.cpp "BulletExample.cpp"
+-   @ref bullet/CMakeLists.txt "CMakeLists.txt"
+
+The [ports branch](https://github.com/mosra/magnum-examples/tree/ports/src/bullet)
+contains additional patches for @ref CORRADE_TARGET_EMSCRIPTEN "Emscripten"
+support that aren't present in `master` in order to keep the example code as
+simple as possible.
+
+@example bullet/BulletExample.cpp @m_examplenavigation{examples-bullet,bullet/} @m_footernavigation
+@example bullet/CMakeLists.txt @m_examplenavigation{examples-bullet,bullet/} @m_footernavigation
+
+*/
+}

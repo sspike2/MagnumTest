@@ -1,0 +1,8 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Shaders/CMakeLists.txt
+  DistanceFieldVector.cpp
+  Flat.cpp
+  MeshVisualizer.cpp
+  Phong.cpp
+  Vector.cpp
+  Generating Code...
+  MagnumShaders.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumShaders-d.lib

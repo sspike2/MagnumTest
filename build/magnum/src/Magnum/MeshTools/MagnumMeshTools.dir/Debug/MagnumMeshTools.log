@@ -1,0 +1,36 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/MeshTools/CMakeLists.txt
+  Combine.cpp
+  CompressIndices.cpp
+  Concatenate.cpp
+  Duplicate.cpp
+  FlipNormals.cpp
+  GenerateIndices.cpp
+  GenerateNormals.cpp
+  Interleave.cpp
+  Reference.cpp
+  RemoveDuplicates.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\MeshTools\RemoveDuplicates.cpp(491,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+  CombineIndexedArrays.cpp
+  Compile.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\MeshTools\Compile.cpp(83,199): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum/Trade/MeshData.h(2124,1): warning C4312: 'reinterpret_cast': conversion from 'T' to 'void *' of greater size
+          with
+          [
+              T=Magnum::UnsignedInt
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum/Trade/MeshData.h(2186): message : see reference to function template instantiation 'bool Magnum::Trade::MeshData::checkAttributeTypeCompatibility<T>(const Magnum::Trade::MeshAttributeData &,const char *const ) const' being compiled
+          with
+          [
+              T=Magnum::Vector3
+          ]
+D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\MeshTools\Compile.cpp(235): message : see reference to function template instantiation 'Corrade::Containers::StridedArrayView<1,const Magnum::Vector3> Magnum::Trade::MeshData::attribute<Magnum::Vector3,void>(Magnum::Trade::MeshAttribute,Magnum::UnsignedInt) const' being compiled
+  Generating Code...
+  MagnumMeshTools.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumMeshTools-d.lib

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractFramebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\AbstractTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Attribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CubeMapTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\MeshView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\PixelFormat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\Sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\BufferImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\GL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\AbstractObject.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\AbstractQuery.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Buffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\DefaultFramebuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Framebuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\OpenGL.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Renderbuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Renderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Shader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Texture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\TextureFormat.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\Version.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\BufferState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\ContextState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\FramebufferState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\MeshState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\QueryState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\RendererState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\ShaderProgramState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\ShaderState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\State.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\TextureState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\driverSpecific.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\maxTextureSize.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\RectangleTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\PrimitiveQuery.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\TextureArray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\TransformFeedback.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\TransformFeedbackState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\DebugOutput.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\DebugState.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\BufferTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\CubeMapTextureArray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\GL\MagnumGLObjects.dir\$(Configuration)\MultisampleTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\MagnumExternal\OpenGL\GL\MagnumFlextGLObjects.dir\$(Configuration)\flextGL.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{6DD48A92-9569-30D8-A8A8-5C211B463560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

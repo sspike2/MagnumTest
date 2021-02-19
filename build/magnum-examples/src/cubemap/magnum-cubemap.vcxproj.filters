@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CubeMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CubeMapExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CubeMapShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\Reflector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\ReflectorShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\Types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Magnum 2.0\magnum-bootstrap-base\build\magnum-examples\src\cubemap\resource_CubeMap_RESOURCES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CubeMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CubeMapShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\Reflector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\ReflectorShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\build\CMakeFiles\a02ccb5826f3264ea4e6abfab7514107\resource_CubeMap_RESOURCES.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\cubemap\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{616A31C1-CACE-358C-97BA-56F6D90DC16B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{58300196-472B-33F5-9F7E-FDAE13A22D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{123DF5C2-93B7-3AFA-B13D-43EAAC117367}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

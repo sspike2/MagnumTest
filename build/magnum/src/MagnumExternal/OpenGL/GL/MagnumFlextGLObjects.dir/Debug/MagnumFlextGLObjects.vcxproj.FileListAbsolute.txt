@@ -1,0 +1,2 @@
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\MagnumExternal\OpenGL\GL\MagnumFlextGLObjects.dir\Debug\MagnumFlextGLObjects.lib
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\MagnumExternal\OpenGL\GL\MagnumFlextGLObjects.dir\Debug\MagnumFlextGLObjects.pdb

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
+D:/Magnum 2.0/magnum-bootstrap-base/magnum-integration/src/Magnum/CMakeLists.txt
+D:/Magnum 2.0/magnum-bootstrap-base/magnum-integration/src/Magnum/versionIntegration.h.cmake

@@ -1,0 +1,2 @@
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Trade\MagnumTradeObjects.dir\Debug\MagnumTradeObjects.lib
+D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Trade\MagnumTradeObjects.dir\Debug\MagnumTradeObjects.pdb

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Magnum glTF Player</title>
+  <link rel="stylesheet" href="WebApplication.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1>Magnum glTF Player</h1>
+  <div id="container">
+    <div id="sizer"><div id="expander"><div id="listener">
+      <canvas id="canvas" tabindex="0"></canvas>
+      <div id="status">Initialization...</div>
+      <div id="status-description"></div>
+      <script src="EmscriptenApplication.js"></script>
+      <script async="async" src="magnum-player.js"></script>
+    </div></div></div>
+  </div>
+  <script>
+    "use strict"; /* it summons the Cthulhu in a proper way, they say */
+
+    /* Done here in addition to using
+       EmscriptenApplication::setContainerCssClass() so we can do extra things
+       like hiding scrollbars on magnum.graphics (none of that needed here,
+       tho). The original function still needs to be called in order to
+       properly propagate window size changes. */
+    Module.setFullsize = function(fullsize) {};
+
+    Module.keyboardListeningElement = Module.canvas;
+    Module.canvas.addEventListener('dragover', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        event.dataTransfer.dropEffect = 'copy';
+    });
+    Module.canvas.addEventListener('drop', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+
+        const files = event.dataTransfer.files;
+        if(!files) {
+            console.error("No files dropped.");
+            return;
+        }
+
+        /* Pass all files through to the player. Memory is allocated on the
+           JS side and freed on the C++ side to avoid needless copies. */
+        for(let i = 0; i != files.length; ++i) {
+            (function(file) {
+                const fileReader = new FileReader();
+                fileReader.onload = function(event) {
+                    /* TODO: but still, isn't here way too much copying? */
+                    const fileData = new Uint8Array(event.target.result);
+                    const pointer = Module._malloc(fileData.length);
+                    const data = new Uint8Array(Module.HEAPU8.buffer, pointer, fileData.length);
+                    data.set(fileData);
+                    Module.ccall('loadFile', null, ['number', 'string', 'number', 'number'], [files.length, file.name, pointer, fileData.length]);
+                };
+                fileReader.onerror = function() {
+                    console.error("Unable to read file " + file.name);
+                };
+                fileReader.readAsArrayBuffer(file);
+            })(files[i]); /* this is how you do a capturing lambda?! ugh */
+        }
+    });
+    Module.canvas.addEventListener('mousedown', function(event) {
+        event.target.focus();
+    });
+    Module.canvas.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    }, true);
+  </script>
+</body>
+</html>

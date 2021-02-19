@@ -1,0 +1,24 @@
+^D:\MAGNUM 2.0\MAGNUM-BOOTSTRAP-BASE\BUILD\CMAKEFILES\9C71E4E431ED7442C0ECC4DF8618C52F\RESOURCE_TEXTEXAMPLE_RESOURCES.CPP.RULE
+setlocal
+cd "D:\Magnum 2.0\magnum-bootstrap-base\magnum-examples\src\text"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\corrade-rc.exe" TextExample_RESOURCES resources.conf "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum-examples/src/text/resource_TextExample_RESOURCES.cpp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MAGNUM 2.0\MAGNUM-BOOTSTRAP-BASE\MAGNUM-EXAMPLES\SRC\TEXT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Magnum 2.0/magnum-bootstrap-base" "-BD:/Magnum 2.0/magnum-bootstrap-base/build" --check-stamp-file "D:/Magnum 2.0/magnum-bootstrap-base/build/magnum-examples/src/text/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

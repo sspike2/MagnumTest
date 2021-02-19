@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/src/CMakeLists.txt
+  MyApplication.cpp
+     Creating library D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/MyApplication.lib and object D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/MyApplication.exp
+  MyApplication.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\MyApplication.exe

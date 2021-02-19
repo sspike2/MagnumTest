@@ -1,0 +1,23 @@
+﻿  Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum-extras/src/Magnum/Ui/resource_MagnumUi_RESOURCES.cpp
+  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum-extras/src/Magnum/Ui/CMakeLists.txt
+  Anchor.cpp
+  BasicPlane.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum-extras\src\Magnum\Ui\BasicPlane.cpp(45,101): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+  BasicUserInterface.cpp
+  Widget.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum-extras\src\Magnum\Ui\Widget.cpp(53,102): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+  Button.cpp
+  Input.cpp
+  Label.cpp
+  Modal.cpp
+  Plane.cpp
+  Style.cpp
+D:\Magnum 2.0\magnum-bootstrap-base\magnum-extras\src\Magnum\Ui\Style.cpp(503,96): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+D:\Magnum 2.0\magnum-bootstrap-base\magnum-extras\src\Magnum\Ui\Style.cpp(520,97): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+D:\Magnum 2.0\magnum-bootstrap-base\magnum-extras\src\Magnum\Ui\Style.cpp(539,97): warning C4312: 'reinterpret_cast': conversion from 'Magnum::UnsignedInt' to 'void *' of greater size
+  UserInterface.cpp
+  ValidatedInput.cpp
+  instantiation.cpp
+  resource_MagnumUi_RESOURCES.cpp
+  Generating Code...
+  MagnumUi.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumUi-d.lib

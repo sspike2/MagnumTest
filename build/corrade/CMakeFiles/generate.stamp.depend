@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeDependentOption.cmake
+D:/Magnum 2.0/magnum-bootstrap-base/corrade/CMakeLists.txt
+D:/Magnum 2.0/magnum-bootstrap-base/corrade/modules/CorradeLibSuffix.cmake
+D:/Magnum 2.0/magnum-bootstrap-base/corrade/modules/UseCorrade.cmake

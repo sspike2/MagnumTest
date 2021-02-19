@@ -1,0 +1,7 @@
+﻿  Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum/src/Magnum/TextureTools/resource_MagnumTextureTools_RCS.cpp
+  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/TextureTools/CMakeLists.txt
+  Atlas.cpp
+  DistanceField.cpp
+  Generating Code...
+  resource_MagnumTextureTools_RCS.cpp
+  MagnumTextureTools.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumTextureTools-d.lib

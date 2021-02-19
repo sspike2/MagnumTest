@@ -1,0 +1,294 @@
+/*
+    This file is part of Magnum.
+
+    Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019,
+                2020, 2021 Vladimír Vondruš <mosra@centrum.cz>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+*/
+
+namespace Magnum {
+/** @page building-extras Downloading and building extras
+@brief Guide how to download and build extras for Magnum engine.
+
+@m_keyword{Building extras,,}
+
+@tableofcontents
+@m_footernavigation
+
+Extras bring additional functionality for the Magnum engine --- playground for
+testing new APIs, specialized stuff that doesn't necessarily need to be a part
+of the main Magnum repository or mutually exclusive functionality.
+
+@section building-extras-packages Prepared packages
+
+The easiest way to install Magnum Extras is to use one of the ready-made
+packages for your platform of choice. See @ref building-extras-manual if you
+want to have more control. Cross-compiling is very similar to
+@ref building-cross "cross-compiling of Magnum itself".
+
+-   @ref building-extras-packages-vcpkg
+-   @ref building-extras-packages-arch
+-   @ref building-extras-packages-deb
+-   @ref building-extras-packages-gentoo
+-   @ref building-extras-packages-brew
+
+@subsection building-extras-packages-vcpkg Vcpkg package
+
+Magnum Extras are available as a [Vcpkg](https://github.com/Microsoft/vcpkg)
+package. See @ref building-packages-vcpkg "the Magnum Vcpkg documentation" for
+a more detailed introduction and a troubleshooting guide. Installing latest
+stable version of Magnum Extras with all its dependencies is done like this:
+
+@code{.bat}
+vcpkg install magnum-extras
+@endcode
+
+@m_class{m-block m-success}
+
+@par Installing latest master
+    The `master` is considered stable for production use and often you may want
+    to prefer it over a potentially outdated tagged release. To do so, use
+    the `--head` option on `magnum-extras` as well as its dependencies:
+@par
+    @code{.bat}
+    vcpkg install --head corrade magnum magnum-extras
+    @endcode
+@par
+    Note that `vcpkg upgrade` doesn't work well with `--head` packages (it will
+    go back to latest tagged version instead of updated master), you have to
+    remove `magnum-extras` as well as their dependencies and install `--head`
+    again:
+@par
+    @code{.bat}
+    vcpkg remove magnum-extras --recurse
+    vcpkg install --head corrade magnum magnum-extras
+    @endcode
+
+Note that just a subset of extra libraries is installed by default. To opt-in
+or opt-out of additional features, you can use the following syntax; feature
+names are simply names of CMake `WITH_*` options from the
+@ref building-extras-features section but lowercase, e.g.:
+
+@code{.bat}
+vcpkg install magnum-extras[ui]
+@endcode
+
+To install all features of a package, use `*`, e.g.:
+
+@code{.bat}
+vcpkg install magnum-extras[*]
+@endcode
+
+There are also Vcpkg packages for
+@ref building-plugins-packages-vcpkg "Magnum Plugins" and
+@ref building-integration-packages-vcpkg "Magnum Integration".
+
+@subsection building-extras-packages-arch ArchLinux packages
+
+In `package/archlinux/magnum-extras-git` there is a package for Git
+development build. The package is also in AUR as
+[magnum-extras-git](https://aur.archlinux.org/packages/magnum-extras-git/).
+It depends on @ref building-corrade-packages-arch "Corrade",
+@ref building-packages-arch "Magnum" and
+@ref building-plugins-packages-arch "Magnum Plugins" ArchLinux packages.
+
+There are also a few development packages for native builds, cross-compilation
+for Emscripten, Android and MinGW or various sanitizer/coverage builds. See the
+PKGBUILD files in the `package/archlinux` directory. They allow you to build
+and install the package directly from source tree. Example usage:
+
+@code{.sh}
+git clone git://github.com/mosra/magnum-extras && cd magnum-extras
+cd package/archlinux
+makepkg -fp PKGBUILD # or any other PKGBUILD file
+@endcode
+
+In most cases the development PKGBUILDs also contain a @cb{.sh} check() @ce
+function which will run all unit tests before packaging. That might sometimes
+fail or take too long, pass `--nocheck` to `makepkg` to skip that.
+
+Once built, install the package using `pacman`:
+
+@code{.sh}
+sudo pacman -U magnum-extras-*.pkg.tar.zst
+@endcode
+
+Edit the PKGBUILDs if you want to pass additional flags to CMake or
+@ref building-extras-features "enable / disable additional features".
+
+There are also ArchLinux packages for
+@ref building-integration-packages-arch "Magnum Integration" and
+@ref building-examples-packages-arch "Magnum Examples".
+
+@subsection building-extras-packages-deb Packages for Debian, Ubuntu and derivatives
+
+The `package/debian/` directory contains all files needed for building Debian
+packages. You need the @ref building-corrade-packages-deb "Corrade" and
+@ref building-packages-deb "Magnum" Debian packages installed and in addition
+also the `dpkg-dev` and `debhelper` packages. Building is easy, just change
+directory to package root, link or copy the `package/debian` directory there
+and run `dpkg-buildpackage`:
+
+@code{.sh}
+git clone git://github.com/mosra/magnum-extras && cd magnum-extras
+ln -s package/debian .
+dpkg-buildpackage
+@endcode
+
+This will compile binary and development packages, which will then appear in a
+parent directory. Install them using `dpkg`:
+
+@code{.sh}
+sudo dpkg -i ../magnum-extras*.deb
+@endcode
+
+If you want to pass additional flags to CMake or
+@ref building-extras-features "enable / disable additional features", add them
+to `dh_auto_configure` at the bottom of `debian/rules`. Watch out, as
+indentation has to be done using tabs, not spaces.
+
+There are also Debian packages for
+@ref building-integration-packages-deb "Magnum Integration" and
+@ref building-examples-packages-deb "Magnum Examples".
+
+@subsection building-extras-packages-gentoo Gentoo Linux ebuilds
+
+Gentoo Git ebuild is available in the `package/gentoo` directory. Get the
+@ref building-corrade-packages-gentoo "Corrade",
+@ref building-packages-gentoo "Magnum" and
+@ref building-plugins-packages-gentoo "Magnum Plugins" Gentoo packages first
+and then build and install Magnum Extras like this:
+
+@code{.sh}
+git clone git://github.com/mosra/magnum-extras && cd magnum-extras
+cd package/gentoo
+sudo ebuild dev-libs/magnum-extras/magnum-extras-9999.ebuild manifest clean merge
+@endcode
+
+If you want to pass additional flags to CMake or
+@ref building-extras-features "enable / disable additional features", add them
+to `mycmakeargs` in the `*.ebuild` file.
+
+There are also Gentoo packages for
+@ref building-integration-packages-gentoo "Magnum Integration" and
+@ref building-examples-packages-gentoo "Magnum Examples".
+
+@subsection building-extras-packages-brew Homebrew formulas for macOS
+
+macOS [Homebrew](https://brew.sh) formulas building the latest Git revision are
+in the `package/homebrew` directory. Either use the `*.rb` files directly or
+use the tap at https://github.com/mosra/homebrew-magnum. This will install the
+latest stable version of Magnum Extras with all dependencies:
+
+@code{.sh}
+brew install mosra/magnum/magnum-extras
+@endcode
+
+But often you may want to install the latest Git revision of all Magnum
+projects instead:
+
+@code{.sh}
+brew install --HEAD mosra/magnum/corrade
+brew install --HEAD mosra/magnum/magnum
+brew install --HEAD mosra/magnum/magnum-plugins
+brew install --HEAD mosra/magnum/magnum-extras
+@endcode
+
+When installing from the `*.rb` files you need to install the
+@ref building-corrade-packages-brew "Corrade",
+@ref building-packages-brew "Magnum" and
+@ref building-plugins-packages-brew "Magnum Plugins" Homebrew packages first.
+If you want to pass additional flags to CMake or
+@ref building-extras-features "enable / disable additional features", edit the
+`*.rb` file.
+
+There are also Homebrew packages for
+@ref building-integration-packages-brew "Magnum Integration" and
+@ref building-examples-packages-brew "Magnum Examples".
+
+@section building-extras-manual Manual build
+
+The source is available on GitHub: https://github.com/mosra/magnum-extras.
+Building extras is very similar to building Magnum itself. See @ref building
+for additonal information about building and running tests, crosscompiling and
+platform-specific issues.
+
+@subsection building-extras-features Enabling or disabling features
+
+Similarly to Magnum, the libraries are build as shared by default. If you are
+developing for a platform which doesn't support shared libraries or if you just
+want to link them statically, enable `BUILD_STATIC` to build the libraries as
+static. If you plan to use them with shared libraries later, enable also
+position-independent code with `BUILD_STATIC_PIC`.
+
+Libraries built in the `Debug` configuration (e.g. with `CMAKE_BUILD_TYPE` set
+to `Debug`) have a `-d` suffix, similarly to what is done when
+@ref building "building Magnum itself".
+
+By default no libraries are built and you need to select them manually:
+
+-   `WITH_UI` --- Build the @ref Ui library. Does not work on
+    @ref MAGNUM_TARGET_GLES2 "OpenGL ES 2.0" / WebGL 1.0 builds of Magnum.
+    Enabled automatically if `WITH_PLAYER` is enabled.
+
+Besides libraries, the following apps are available, also all disabled by
+default:
+
+-   `WITH_PLAYER` -- Build the @ref magnum-player "magnum-player" executable
+-   `WITH_UI_GALLERY` --- Build the @ref magnum-ui-gallery "magnum-ui-gallery"
+    executable
+
+Note that each [namespace](namespaces.html) documentation contains more
+detailed information about its dependencies, availability on particular
+platforms and also a guide how to enable given library for building and how to
+use it with CMake.
+
+@section building-extras-doc Building documentation
+
+The documentation for extras is built as part of of the main Magnum
+documentation. Clone the projects next to each other and continue as described
+in @ref building-doc.
+
+@section building-extras-ci Continuous Integration
+
+@subsection building-extras-ci-circleci CircleCI
+
+In `package/ci/` there is a `circle.yml` file with Linux GCC 4.8, macOS,
+Linux desktop GLES2/GLES3, Emscripten WebGL1/WebGL2, AddressSanitizer and
+ThreadSanitizer configuration. Online at
+https://circleci.com/gh/mosra/magnum-extras.
+
+@subsection building-extras-ci-travis Travis
+
+In `package/ci/` there is a `travis.yml` file with iOS GLES2/GLES3 and Android
+GLES2/GLES3 configuration. Online at https://travis-ci.com/mosra/magnum-extras.
+
+@subsection building-extras-ci-appveyor AppVeyor
+
+In `package/ci/` there is an `appveyor.yml` file with Windows desktop MSVC,
+MinGW, Windows desktop GLES2/GLES3 and Windows RT GLES2/GLES3 configuration.
+Online at https://ci.appveyor.com/project/mosra/magnum-extras.
+
+@subsection building-extras-ci-coverage Codecov.io
+
+Linux, Linux GLES, macOS and Windows MinGW builds contribute to a combined code
+coverage report, available online at https://codecov.io/gh/mosra/magnum-extras.
+*/
+}

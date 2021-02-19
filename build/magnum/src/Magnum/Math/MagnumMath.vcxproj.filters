@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Angle.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Bezier.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\BoolVector.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Color.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Complex.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Constants.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\ConfigurationValue.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\CubicHermite.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Distance.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Dual.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\DualComplex.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\DualQuaternion.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Frustum.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Functions.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\FunctionsBatch.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Half.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Intersection.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Math.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\TypeTraits.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Matrix.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Matrix3.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Matrix4.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Quaternion.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Packing.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\PackingBatch.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Range.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\RectangularMatrix.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\StrictWeakOrdering.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Swizzle.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Tags.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Unit.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Vector.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Vector2.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Vector3.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Vector4.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Magnum 2.0\magnum-bootstrap-base\magnum\src\Magnum\Math\Implementation\halfTables.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{58300196-472B-33F5-9F7E-FDAE13A22D8E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,391 @@
+/*
+    This file is part of Magnum.
+
+    Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019,
+                2020, 2021 Vladimír Vondruš <mosra@centrum.cz>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+*/
+
+namespace Magnum {
+/** @page examples-viewer Model Viewer
+@brief Scene graph, resource management and model importing.
+
+@m_keywords{Viewer}
+
+@tableofcontents
+@m_footernavigation
+
+@image html viewer.png
+
+In this example we will import a 3D scene file and display it interactively on
+the screen. The tutorial covers these new features:
+
+-   Using @ref SceneGraph for managing objects, their relations and
+    transformations.
+-   Importing scenes, meshes, materials and textures via @ref Trade::AbstractImporter.
+
+@m_div{m-button m-primary} <a href="https://magnum.graphics/showcase/viewer/">@m_div{m-big}Live web demo @m_enddiv @m_div{m-small} uses WebAssembly & WebGL @m_enddiv </a> @m_enddiv
+
+Note that this example is deliberately simplified to highlight the above
+features. For a full-featured model viewer and animation player see the
+@ref magnum-player "magnum-player" app.
+
+@section examples-viewer-scenegraph Scene graph
+
+In previous examples we managed our scene manually, because there was just one
+object. However, as object count increases, it's better to have the objects
+organized in a scene graph. Magnum @ref SceneGraph takes care of three key
+things:
+
+-   parent/child object relations
+-   hierarchic object transformations
+-   attaching features to objects (drawing, animation, ...)
+
+For a scene there is one root @ref SceneGraph::Scene object and some
+@ref SceneGraph::Object instances. Each object can have a parent and maintains
+a list of its children. This hierarchy is used also to simplify memory
+management --- when destroying any object, all its children and features are
+recursively destroyed too.
+
+Each particular scene graph uses some transformation implementation, which
+stores transformation for each object (relative to parent) and provides
+convenience functions for most used transformations, like translation, rotation
+and scaling. It is also possible to calculate an absolute transformation or
+transformation relative to some arbitrary object in the same scene.
+
+Features are added to objects to make them do something useful. The most common
+feature, which will be also used in this example, is @ref SceneGraph::Drawable.
+When implemented, it allows the object to be drawn on the screen. Each drawable
+is part of some @ref SceneGraph::DrawableGroup and this group can be then
+rendered in one shot using @ref SceneGraph::Camera. The camera is also a
+feature --- it handles various projection parameters and is attached to an
+object that controls its transformation in the scene.
+
+Magnum scene graph implementation works for both 2D and 3D scenes. Their usage
+is nearly the same and differs only in obvious ways (e.g. perspective
+projection is not available in 2D).
+
+See also @ref scenegraph for more detailed introduction.
+
+@section examples-viewer-setup Setting up and initializing the scene graph
+
+As we are importing a complete scene, we need quite a lot of things to handle
+materials, meshes and textures:
+
+@dontinclude viewer/ViewerExample.cpp
+@skip #include
+@until TextureData.h
+
+For this example we will use scene graph with @ref SceneGraph::MatrixTransformation3D
+as transformation implementation. It is a good default choice, if you don't
+want to be limited in how you transform the objects, but on the other hand it
+eats up more memory and is slightly slower than for example
+@ref SceneGraph::DualQuaternionTransformation implementation. We typedef the
+classes to save us more typing:
+
+@skip typedef SceneGraph::Object
+@until typedef SceneGraph::Scene
+
+Our main class stores shader instances for rendering colored and textured
+objects and all imported meshes and textures. After that, there is the scene
+graph --- root scene instance, a manipulator object for easy interaction with
+the scene, object holding the camera, the actual camera instance and a group
+of all drawables in the scene.
+
+@skip class ViewerExample
+@until };
+@until };
+
+In the constructor we first parse command-line arguments using
+@ref Corrade::Utility::Arguments "Utility::Arguments". At the very least we
+need a filename to load. Magnum itself is also able to consume command-line
+arguments, for example to control DPI scaling or driver-specific options. All
+of them start with `--magnum-` and @ref Corrade::Utility::Arguments::addSkippedPrefix() "addSkippedPrefix()"
+makes it possible to specify them instead of failing with unknown argument
+error.
+
+@skip ViewerExample::ViewerExample
+@until .parse(
+
+Then we setup the scene:
+
+@skip Every scene needs a camera
+@until manipulator.setParent
+
+After that, we enable depth test and face culling for correct and fast
+rendering and set some shader defaults that will stay the same during the whole
+time. Note that these properties are usually part of the imported material
+data, but to keep the example simple we'll be only using the diffuse color and
+texture properties.
+
+@skip Setup renderer
+@until setShininess
+@until setShininess
+
+@section examples-viewer-import Importing the data
+
+For scene import we are using the @ref Trade::AnySceneImporter "AnySceneImporter"
+plugin, which detects format based or file extension and then redirects the
+actual loading to a plugin dedicated for given format. So, for example, if you
+open `mesh.obj`, it'll be opened using @ref Trade::ObjImporter "ObjImporter",
+if you open `mesh.ply`, it'll go to @ref Trade::StanfordImporter "StanfordImporter",
+etc. Sometimes there is more than one possible choice (glTF files in particular
+can be opened using both @ref Trade::TinyGltfImporter "TinyGltfImporter" and
+@ref Trade::AssimpImporter "AssimpImporter") and so above we made it possible
+to override the used importer plugin using the @cpp "importer" @ce command-line
+argument. Another option is to specify the preference using
+@ref Corrade::PluginManager::Manager::setPreferredPlugins().
+
+We try load and instantiate the plugin and open the file. If any operation
+fails, the application simply exits. The plugins print a message on error, so
+it's usually not needed to repeat it in application code.
+
+@skip Load a scene importer
+@until std::exit(4);
+
+First we import all textures. The textures are stored in an array of
+@ref Corrade::Containers::Optional "Containers::Optional" objects, so if
+importing a texture fails, given slot is set to
+@ref Corrade::Containers::NullOpt "Containers::NullOpt" to indicate the
+unavailability. For simplicity we'll import only 8-bit-per-channel RGB or RGBA
+textures.
+
+Most scene importers internally use @ref Trade::AnyImageImporter "AnyImageImporter"
+for loading images from external files. It is similar to @ref Trade::AnySceneImporter "AnySceneImporter",
+but specialized for image loading. For example if the textures references
+`image.png`, it gets opened through @ref Trade::PngImporter "PngImporter",
+`texture.jpg` through @ref Trade::JpegImporter "JpegImporter" etc. The plugins
+also have aliases, so for example on platforms that don't have `libPNG`
+available, dependency-less @ref Trade::StbImageImporter "StbImageImporter" can
+be transparently used in place of @ref Trade::PngImporter "PngImporter" without
+changing anything in the loading code. The ultimate goal is that you can deploy
+different set of plugins for each platform but still use them in
+platform-independent way, without worrying about which plugin might be
+available on which system.
+
+@skip Load all textures
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+
+After that we import all materials. The material data are stored only
+temporarily, because we'll later extract only the data we need from them.
+Again, for simplicity, we'll restrict the loading only to Phong-based
+materials.
+
+@skip Load all materials
+@until }
+@until }
+@until }
+@until }
+@until }
+
+Next thing is loading meshes. Because the models might or might not be
+textured, the mesh might or might not be indexed etc., the mesh creation
+procedure can get fairly long-winded. There is a convenience
+@ref MeshTools::compile() function which examines the data, adds all available
+vertex attributes to the buffer (normals, texture coordinates...), packs the
+indices (if any) and then configures the mesh for the @ref Shaders::Generic
+shader, from which all other stock shaders are derived. This function is useful
+for exactly this case of importing general meshes --- but the lower-level way
+involving @ref MeshTools::interleave() and @ref MeshTools::compressIndices() as
+explained in the earlier @ref examples-primitives "Primitives example" is far
+more flexible if you want data packing, index optimization and other
+performance-related stuff. The only case that the following code does not
+handle are meshes without normals (as is common with files in Stanford/PLY
+format), there the normals would need to be generated to have the mesh
+displayed with proper lighting.
+
+@skip Load all meshes
+@until }
+@until }
+@until }
+@until }
+@until }
+
+Last remaining part is to populate the actual scene. If the format supports
+scene hierarchy, we recursively import all objects in the scene. If it doesn't
+(which is the case for the simplest mesh formats), we just add a single object
+with the first imported mesh and put a simple color-only material on it.
+
+@skip Load the scene
+@until new ColoredDrawable
+@until }
+
+The actual function that adds objects into the scene isn't very complex. First
+it creates the object with correct parent and transformation, then attaches
+either a colored or texture drawable feature to it (more on these two below)
+and then recursively calls itself on all object children. Again, for
+simplicity, only diffuse texture is considered in this example.
+
+@skip void ViewerExample::addObject
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+
+@section examples-viewer-objects Drawable objects
+
+As explained above, all objects that want to draw something on the screen using
+the scene graph do that using the @ref SceneGraph::Drawable feature. It can be
+either subclassed separately or added through multiple inheritance. In this
+example we'll use the former, see @ref scenegraph-features for details on all
+possibilities.
+
+The subclass stores everything needed to render either the colored or the
+textured object --- reference to a shader, a mesh and a color or a texture. The
+constructor takes care of passing the containing object and a drawable group to
+the superclass.
+
+@dontinclude viewer/ViewerExample.cpp
+@skip class ColoredDrawable
+@until };
+@until };
+
+Each drawable needs to implement the @cpp draw() @ce function. It's nothing
+more than setting up shader parameters and drawing the mesh. To keep things
+simple, the example uses a fixed global light position --- though it's possible
+to import the light position and other properties as well, if the file has
+them.
+
+@skip void ColoredDrawable::draw
+@until }
+@until }
+@until }
+@until }
+
+Finally, the draw event only delegates to the camera, which draws everything
+in our drawable group.
+
+@skip void ViewerExample::drawEvent
+@until }
+
+@section examples-viewer-interactivity Event handling
+
+This example has a resizable window, for which we need to implement the
+viewport event. It simply delegates the size change to GL viewport and to the
+camera.
+
+@skip void ViewerExample::viewportEvent
+@until }
+@until }
+
+Lastly there is mouse handling to rotate and zoom the scene around, nothing new
+to talk about.
+
+@skip void ViewerExample::mousePressEvent
+@until }
+@until }
+@until }
+@until }
+@until }
+@until }
+
+@section examples-viewer-compilation Compilation & running
+
+Compilation is again nothing special:
+
+@dontinclude viewer/CMakeLists.txt
+@skip find_package(
+@until Magnum::Trade)
+
+Now, where to get the models and plugins to load them with? The core Magnum
+repository contains a very rudimentary OBJ file loader in @ref Trade::ObjImporter "ObjImporter",
+and you can try it with the [scene.obj](https://github.com/mosra/magnum-examples/raw/master/src/viewer/scene.obj)
+file bundled in the example repository. For more advanced models with custom
+textures and materials, @ref building-plugins "Magnum Plugins" provide
+@ref Trade::TinyGltfImporter "TinyGltfImporter" that can load the
+[scene.glb](https://github.com/mosra/magnum-examples/raw/master/src/viewer/scene.glb),
+and there are more plugins for various other formats.
+
+@m_class{m-block m-success}
+
+@par Enabling model-loading plugins in your project
+    If you're using the CMake subproject setup, you'll need to modify the
+    top-level `CMakeLists.txt` to enable these --- expanding on what
+    @ref examples-textured-triangle-importers "was shown in the previous tutorial":
+@par
+    @code{.cmake}
+    ...
+
+    # If you want to load just basic OBJs
+    set(WITH_ANYIMAGEIMPORTER ON CACHE BOOL "" FORCE)
+    set(WITH_ANYSCENEIMPORTER ON CACHE BOOL "" FORCE)
+    set(WITH_OBJIMPORTER ON CACHE BOOL "" FORCE)
+    add_subdirectory(magnum EXCLUDE_FROM_ALL)
+
+    # If you want to load (textured) glTF as well
+    set(WITH_STBIMAGEIMPORTER ON CACHE BOOL "" FORCE)
+    set(WITH_TINYGLTFIMPORTER ON CACHE BOOL "" FORCE)
+    add_subdirectory(magnum-plugins EXCLUDE_FROM_ALL)
+
+    add_dependencies(magnum-viewer
+        Magnum::AnyImageImporter
+        Magnum::AnySceneImporter
+        Magnum::ObjImporter
+        MagnumPlugins::StbImageImporter
+        MagnumPlugins::TinyGltfImporter)
+    @endcode
+@par
+    If you're using packaged Magnum, all the above-mentioned plugins are
+    included by default (and you don't need to do anything in CMake in order to
+    use them); if you build it yourself, make sure you have the desired
+    `WITH_*` options enabled.
+
+You can experiment by loading scenes of varying complexity and formats, adding
+light and camera property import or supporting more than just diffuse Phong
+materials. The full file content is linked below. Full source code is also
+available in the [magnum-examples GitHub repository](https://github.com/mosra/magnum-examples/tree/master/src/viewer).
+
+-   @ref viewer/CMakeLists.txt "CMakeLists.txt"
+-   @ref viewer/ViewerExample.cpp "ViewerExample.cpp"
+-   [scene.obj](https://github.com/mosra/magnum-examples/raw/master/src/viewer/scene.obj)
+-   [scene.glb](https://github.com/mosra/magnum-examples/raw/master/src/viewer/scene.glb)
+
+The [ports branch](https://github.com/mosra/magnum-examples/tree/ports/src/viewer)
+contains additional patches for @ref CORRADE_TARGET_EMSCRIPTEN "Emscripten"
+and @ref CORRADE_TARGET_ANDROID "Android" support that aren't present in
+`master` in order to keep the example code as simple as possible.
+
+@section examples-viewer-credits Credits
+
+The bundled model is [Blender Suzanne](https://en.wikipedia.org/wiki/Blender_(software)#Suzanne). Android port was contributed by
+[Patrick Werner](https://github.com/boonto).
+
+@example viewer/CMakeLists.txt @m_examplenavigation{examples-viewer,viewer/} @m_footernavigation
+@example viewer/ViewerExample.cpp @m_examplenavigation{examples-viewer,viewer/} @m_footernavigation
+
+*/
+}
