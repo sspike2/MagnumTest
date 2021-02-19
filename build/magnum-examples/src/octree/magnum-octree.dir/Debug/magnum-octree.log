@@ -1,7 +1,0 @@
-﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/src/octree/CMakeLists.txt
-  LooseOctree.cpp
-  OctreeExample.cpp
-  ArcBall.cpp
-  Generating Code...
-     Creating library D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-octree.lib and object D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-octree.exp
-  magnum-octree.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\magnum-octree.exe

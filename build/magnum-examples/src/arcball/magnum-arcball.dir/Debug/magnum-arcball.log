@@ -1,6 +1,0 @@
-﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/src/arcball/CMakeLists.txt
-  ArcBall.cpp
-  ArcBallExample.cpp
-  Generating Code...
-     Creating library D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-arcball.lib and object D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-arcball.exp
-  magnum-arcball.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\magnum-arcball.exe

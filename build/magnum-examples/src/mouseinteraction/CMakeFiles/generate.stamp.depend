@@ -1,8 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/corrade/modules/CorradeLibSuffix.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/corrade/modules/UseCorrade.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/modules/FindCorrade.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/modules/FindMagnum.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/src/mouseinteraction/CMakeLists.txt

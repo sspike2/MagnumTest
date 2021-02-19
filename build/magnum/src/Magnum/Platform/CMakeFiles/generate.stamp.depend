@@ -1,6 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
-C:/Program Files/CMake/share/cmake-3.18/Modules/SelectLibraryConfigurations.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum/modules/FindSDL2.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Platform/CMakeLists.txt

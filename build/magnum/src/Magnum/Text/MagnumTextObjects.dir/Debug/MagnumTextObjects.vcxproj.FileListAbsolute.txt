@@ -1,2 +1,0 @@
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Text\MagnumTextObjects.dir\Debug\MagnumTextObjects.lib
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Text\MagnumTextObjects.dir\Debug\MagnumTextObjects.pdb

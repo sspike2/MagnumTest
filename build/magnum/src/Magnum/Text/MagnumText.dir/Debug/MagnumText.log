@@ -1,6 +1,0 @@
-﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Text/CMakeLists.txt
-  AbstractFont.cpp
-  AbstractFontConverter.cpp
-  AbstractGlyphCache.cpp
-  Generating Code...
-  MagnumText.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\MagnumText-d.lib

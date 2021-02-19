@@ -1,2 +1,0 @@
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\MeshTools\MagnumMeshToolsObjects.dir\Debug\MagnumMeshToolsObjects.lib
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\MeshTools\MagnumMeshToolsObjects.dir\Debug\MagnumMeshToolsObjects.pdb

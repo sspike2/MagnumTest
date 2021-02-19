@@ -1,6 +1,0 @@
-﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/Text/CMakeLists.txt
-  DistanceFieldGlyphCache.cpp
-  GlyphCache.cpp
-  Renderer.cpp
-  Generating Code...
-  MagnumTextObjects.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Text\MagnumTextObjects.dir\Debug\MagnumTextObjects.lib

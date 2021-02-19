@@ -1,8 +1,0 @@
-﻿  Compiling data resource file D:/Magnum 2.0/magnum-bootstrap-base/build/magnum-examples/src/arealights/resource_AreaLights_RESOURCES.cpp
-  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/magnum-examples/src/arealights/CMakeLists.txt
-  AreaLightsExample.cpp
-  resource_AreaLights_RESOURCES.cpp
-  Generating Code...
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:REF' specification
-     Creating library D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-arealights.lib and object D:/Magnum 2.0/magnum-bootstrap-base/build/Debug/lib/magnum-arealights.exp
-  magnum-arealights.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\bin\magnum-arealights.exe

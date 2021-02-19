@@ -1,7 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/corrade/modules/UseCorrade.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum/modules/FindCorrade.cmake
-D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/ShaderTools/CMakeLists.txt
-D:/Magnum 2.0/magnum-bootstrap-base/magnum/src/Magnum/ShaderTools/configure.h.cmake

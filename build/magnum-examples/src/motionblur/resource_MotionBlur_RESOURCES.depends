@@ -1,7 +1,0 @@
-group=shaders
-
-[file]
-filename=MotionBlurShader.frag
-
-[file]
-filename=MotionBlurShader.vert

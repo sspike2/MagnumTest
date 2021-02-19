@@ -1,2 +1,0 @@
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\Debug\MagnumDebugToolsObjects.lib
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\DebugTools\MagnumDebugToolsObjects.dir\Debug\MagnumDebugToolsObjects.pdb

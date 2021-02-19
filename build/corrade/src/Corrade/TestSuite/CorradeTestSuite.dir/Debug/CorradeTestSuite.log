@@ -1,9 +1,0 @@
-﻿  Building Custom Rule D:/Magnum 2.0/magnum-bootstrap-base/corrade/src/Corrade/TestSuite/CMakeLists.txt
-  Comparator.cpp
-  Tester.cpp
-  File.cpp
-  FileToString.cpp
-  FloatingPoint.cpp
-  StringToFile.cpp
-  Generating Code...
-  CorradeTestSuite.vcxproj -> D:\Magnum 2.0\magnum-bootstrap-base\build\Debug\lib\CorradeTestSuite-d.lib

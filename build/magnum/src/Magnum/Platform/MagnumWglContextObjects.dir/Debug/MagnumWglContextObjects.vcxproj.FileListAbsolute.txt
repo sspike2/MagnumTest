@@ -1,2 +1,0 @@
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Platform\MagnumWglContextObjects.dir\Debug\MagnumWglContextObjects.lib
-D:\Magnum 2.0\magnum-bootstrap-base\build\magnum\src\Magnum\Platform\MagnumWglContextObjects.dir\Debug\MagnumWglContextObjects.pdb
